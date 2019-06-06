@@ -1,5 +1,13 @@
 class CorelButton extends HTMLButtonElement {
 
+    get iconAlign() {
+        return this.getAttribute('icon-align');
+    }
+
+    set iconAlign(val) {
+        this.setAttribute("icon-align", val);
+    }
+
     static get observedAttributes() {
         return ['icon', 'icon-align'];
     }
@@ -15,7 +23,12 @@ class CorelButton extends HTMLButtonElement {
         if(name === 'icon') {
             var icon = document.createElement("corel-icon");
             icon.setAttribute("name",newValue);
-            this.prepend(icon);
+
+            if(this.iconAlign === 'right') {
+                this.append(icon);
+            }else {
+                this.prepend(icon);
+            }
         }
     }
 }
