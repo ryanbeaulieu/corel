@@ -1,0 +1,20 @@
+{
+  "name": "corel",
+  "version": "0.0.1",
+  "description": "Corel is a design system composed of vanilla javascript web components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python -m SimpleHTTPServer 8081"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanbeaulieu/corel.git"
+  },
+  "author": "Ryan Beaulieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanbeaulieu/corel/issues"
+  },
+  "homepage": "https://github.com/ryanbeaulieu/corel#readme"
+}
