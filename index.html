@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Corel</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/webcomponents-bundle.js"></script>
-    <script src="src/button/button.component.js"></script>
+    <script type="module">
+        import './src/button/button.component.js';
+        import './src/icon/icon.component.js';
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
-    <link href="src/button/button.style.css" rel="stylesheet" type="text/css" />
+    <link href="build/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <button is="corel-btn" size="xlarge" type="primary">xlarge</button>
+    <button is="corel-btn" size="xlarge" type="primary" icon="add">xlarge</button>
     <button is="corel-btn" size="large" type="primary">large</button>
     <button is="corel-btn" type="primary">default</button>
     <button is="corel-btn" size="small" type="primary">small</button>

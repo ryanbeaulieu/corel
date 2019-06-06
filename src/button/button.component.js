@@ -13,8 +13,8 @@ class CorelButton extends HTMLButtonElement {
     attributeChangedCallback(name, oldValue, newValue) {
         
         if(name === 'icon') {
-            var icon = document.createElement("span");
-            icon.textContent = newValue;
+            var icon = document.createElement("corel-icon");
+            icon.setAttribute("name",newValue);
             this.prepend(icon);
         }
     }
